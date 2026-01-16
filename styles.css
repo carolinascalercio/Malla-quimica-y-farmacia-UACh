@@ -1,1 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.malla-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.semestre {
+    margin-bottom: 20px;
+}
+
+.ramo {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.ramo.pendiente {
+    background-color: #f4a9c2; /* Rosado si está pendiente */
+}
+
+.ramo.aprobado {
+    background-color: #8a2be2; /* Morado cuando está aprobado */
+    text-decoration: line-through; /* Tachado cuando esté aprobado */
+}
+
+.ramo.preRequisito {
+    background-color: #d3d3d3; /* Gris para los ramos bloqueados */
+    cursor: not-allowed; /* No se puede hacer clic en estos */
+}
 
