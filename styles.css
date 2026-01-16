@@ -9,17 +9,19 @@ body {
 }
 
 .malla-container {
-    display: flex;
-    justify-content: space-around; /* Esto organiza los semestres en fila */
+    display: flex; /* Aquí usamos Flexbox para organizar los semestres en fila */
+    justify-content: space-between; /* Se distribuyen equitativamente */
     margin-top: 20px;
+    width: 100%;
+    overflow-x: auto; /* Permite el desplazamiento horizontal si hay muchos semestres */
 }
 
 .semestre {
-    width: 200px;
-    margin: 10px;
+    width: 200px; /* Define el ancho de cada semestre */
     display: flex;
-    flex-direction: column; /* Los ramos están organizados en vertical */
+    flex-direction: column; /* Los ramos estarán en columna dentro de cada semestre */
     align-items: center;
+    margin: 0 20px;
 }
 
 .ramo {
