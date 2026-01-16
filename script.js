@@ -14,6 +14,10 @@ function marcarRamo(ramoId) {
 // Bloquea los ramos que dependen de otros, cambiándolos a gris
 function bloquearRamo(ramoId) {
     let ramo = document.getElementById(ramoId);
-    ramo.classList.add('preRequisito');
-    alert("Este ramo está bloqueado, necesitas aprobar el ramo anterior primero.");
+    
+    // Verifica si el ramo ya tiene el estado de bloqueado para evitar repetición
+    if (!ramo.classList.contains('preRequisito')) {
+        ramo.classList.add('preRequisito');
+        alert("Este ramo está bloqueado, necesitas aprobar el ramo anterior primero.");
+    }
 }
