@@ -17,4 +17,3 @@ function bloquearRamo(ramoId) {
     ramo.classList.add('preRequisito');
     alert("Este ramo está bloqueado, necesitas aprobar el ramo anterior primero.");
 }
-
