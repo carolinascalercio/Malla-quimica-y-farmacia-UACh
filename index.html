@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="malla-container">
+        <div class="semestre" id="semestre1">
+            <h2>1er Año - Semestre I</h2>
+            <div class="ramo pendiente" id="biologia-celular" onclick="marcarRamo('biologia-celular')">Biología Celular</div>
+            <div class="ramo pendiente" id="comunicacion-lengua" onclick="marcarRamo('comunicacion-lengua')">Comunicación en Lengua Materna</div>
+            <div class="ramo pendiente" id="educacion-fisica" onclick="marcarRamo('educacion-fisica')">Educación Física y Salud</div>
+            <div class="ramo pendiente" id="algebra" onclick="marcarRamo('algebra')">Álgebra</div>
+            <div class="ramo pendiente" id="quimica-bases" onclick="marcarRamo('quimica-bases')">Bases de Química</div>
+        </div>
+        <div class="semestre" id="semestre2">
+            <h2>1er Año - Semestre II</h2>
+            <div class="ramo preRequisito" id="biologia-humana" onclick="bloquearRamo('biologia-humana')">Biología Humana (Requiere Biología Celular)</div>
+            <div class="ramo preRequisito" id="reading-comprehension" onclick="bloquearRamo('reading-comprehension')">Reading Comprehension (Requiere Comunicación en Lengua Materna)</div>
+            <div class="ramo preRequisito" id="fisica-basica" onclick="bloquearRamo('fisica-basica')">Física Básica (Requiere Álgebra)</div>
+            <div class="ramo preRequisito" id="calculo" onclick="bloquearRamo('calculo')">Cálculo (Requiere Álgebra)</div>
+            <div class="ramo preRequisito" id="responsabilidad-social" onclick="bloquearRamo('responsabilidad-social')">Responsabilidad Social del QF (Requiere Papel del QF en la Historia y Sociedad)</div>
+            <div class="ramo preRequisito" id="equilibrio-quimico" onclick="bloquearRamo('equilibrio-quimico')">Equilibrio Químico (Requiere Bases de Química)</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
